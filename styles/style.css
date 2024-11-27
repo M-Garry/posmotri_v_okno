@@ -9,14 +9,26 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  max-width: 1140px; 
+  max-height: 535px;
+  gap: 30px; 
+  }
 
 h1,
 h2,
@@ -37,4 +49,131 @@ ol {
   list-style: none;
 }
 
-/* ВОТ ТУТ НАЧНУ РАБОТАТЬ */
+
+
+.result {
+  /* width: 711px; */
+}
+.result__video-container {
+  position: relative;
+  background-color: aqua;
+  height: 386px;
+  width: 711px;
+  margin-bottom: 16px;
+}
+.result__video {
+object-fit: cover;
+height: 100%;
+width: 100%;
+}
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+ 
+}
+.search-form__fieldset {
+}
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+  /* text-decoration: none; */
+}
+.search-form__label {
+}
+.search-form__label-text {
+}
+.visually-hidden {
+}
+.search-form__textfield {
+}
+.search-form__checkbox-list {
+}
+.search-form__checkbox {
+}
+.search-form__pseudo-checkbox {
+}
+.button {
+}
+.search-form__submit-button {
+}
+.content__details {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end;  */
+  gap: 26px; 
+  height: 100%;
+  width: 100%;
+}
+.title {
+}
+.content__accent {
+}
+.content__list {
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  align-items: end; */
+  height: 298px;
+  overflow: auto;
+}
+.preloader-template {
+}
+.preloader {
+}
+.preloader-chasing-squares {
+}
+.square {
+}
+.cards-list-item-template {
+}
+.content__list-item {
+  display: flex;
+  justify-content: space-between;
+
+  width: 394px;
+
+}
+
+.content__list-item:not(:last-of-type) {
+  
+  margin-bottom: 30px;
+}
+
+.content__card-link {
+}
+.content__video-card {
+  display: grid;
+  grid-template-columns: 194px 200px;
+  align-content: end;
+  /* flex-direction: row; */
+}
+.content__video-card-description-container {
+  height: 100%;
+  width: 100%;
+}
+.content__video-card-title {
+}
+.content__video-card-description {
+}
+.content__video-card-thumbnail {
+  height: 103px;
+  width: 194px;
+  object-fit: cover;
+
+}
+.more-button-template {
+}
+.more-button {
+}
+.error-template {
+}
+.error {
+}
+.error__title {
+}
+
+
