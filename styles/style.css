@@ -8,18 +8,7 @@ html {
   block-size: 100%;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  inline-size: 1200px;
-  block-size: 100%;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
-}
+
 
 
 h1,
@@ -42,6 +31,21 @@ ol {
   list-style: none;
 }
 
+/*Вся страница */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  inline-size: 1200px;
+  block-size: 100%;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+}
+
+/*Общее пространство для всех форм */
 .content {
   display: flex;
   justify-content: center;
@@ -51,12 +55,15 @@ ol {
   gap: 30px; 
   }
 
+/*Левая половина сайта целиком*/
 .result {
   /* width: 711px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+/*Контайнер для видео в превью */
 .result__video-container {
   position: relative;
   background-color: aqua;
@@ -64,21 +71,28 @@ ol {
   width: 711px;
   margin-bottom: 16px;
 }
+
+/*Само видео в превью */
 .result__video {
 object-fit: cover;
 height: 100%;
 width: 100%;
 }
+
+/*Форма с тремя элементами (все что ниже превью)*/
 .search-form {
   display: flex;
   justify-content: space-between;
 }
+/*Поле ввода + заголовок этого поля */
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.search-form__fieldset-title {
+
+/*Заголовок поля ввода */
+ .search-form__fieldset-title {  
   display: flex;
   font-family: 'Fira Sans Condensed';
   font-weight: 400;
@@ -87,14 +101,24 @@ width: 100%;
   color: #fff;
   /* text-decoration: none; */
 }
+
+/* Скрытое поле описания поля ввода */
 .search-form__label {
   display: flex;
   align-items: center;
-gap: 5px;
+  gap: 5px;
   width: fit-content;
 }
+
+/* Описание chekbox */
 .search-form__label-text {
 }
+
+.search-form__fieldset-title:focus-visible{
+  
+}
+
+/* Делает элемент невидимым */
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -104,6 +128,8 @@ gap: 5px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+/* Само поле ввода */
 .search-form__textfield {
   appearance: none;
   cursor: pointer;
@@ -117,7 +143,10 @@ gap: 5px;
   border-width: 2px;
   background-color: transparent;
   min-width: 225px;
+  cursor: pointer;
 }
+
+/* Тут все чекбоксы */
 .search-form__checkbox-list {
   display: flex;
   justify-content: space-between;
@@ -127,18 +156,27 @@ gap: 5px;
   font-weight: 400;
   width: fit-content;
   gap: 10px;
+  cursor: pointer;
   /* min-width: 200px; */
 }
+
+/* Оригинальные чекбоксы (скрыты) */
 .search-form__checkbox {
 }
 
+/* Псевдоэлементы чекбоксов */
 .search-form__pseudo-checkbox {
   display: inline-block;
   height: 19px;
   width: 19px;
   border: 1px solid white;
   background-color: black;
- 
+}
+
+/*Псевдоэлементы */
+.search-form__label:has(:focus-visible):not(:active) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
@@ -147,12 +185,23 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   outline-offset: -2px;
 }
 
+.search-form__label:has(:focus-visible):not(:active) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
 
+.content__list-item:hover {
+  text-decoration: underline;
+}
+
+/* сама Кнопка */
 .button {
   cursor: pointer;
   /* justify-items: center; */
 
 }
+
+/* Класс для кнопки */
 .search-form__submit-button {
   width: 194px;
   color: white;
@@ -160,11 +209,15 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   background-color: transparent;
   outline:  1px solid white;
   color: white;
-font-size: 18px;
-font-family: Fira Sans Condensed;
-font-weight: 700;
-word-wrap: break-word;
+  font-size: 18px;
+  font-family: Fira Sans Condensed;
+  font-weight: 700;
+  word-wrap: break-word;
+  padding: 5px;
+  cursor: pointer;
 }
+
+/* Правая часть сайта */
 .content__details {
   display: flex;
   flex-direction: column;
@@ -175,27 +228,28 @@ word-wrap: break-word;
   min-height: 535px;
   min-width: 400px;
 }
+/* Большие буквы над карточками */
 .title {
   font-family: Oswald;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
   text-transform: uppercase;
-
 }
 
+/* Первые 2 большие буквы */
 .content__accent {
   color: #545050;
   /* position: relative;
   z-index: -1;   */
 }
 
-
+/* Список карточек */
 .content__list {
   position: relative;
-  /* display: flex;
+   display: flex; 
   flex-direction: column;
-  align-items: end; */
+  align-items: end; 
   max-height: 298px;
   overflow: auto;
 }
@@ -209,56 +263,77 @@ word-wrap: break-word;
 }
 .cards-list-item-template {
 }
+
+/* Отдельная карточка */
 .content__list-item {
   display: flex;
   justify-content: flex-start;
-
-  width: 394px;
-
+  width: 390px;
 }
 
 .content__list-item:not(:last-of-type) {
-  
   margin-bottom: 30px;
 }
 
+/* Ссылка на карточку */
 .content__card-link {
   text-decoration: none;
   color: white;
 }
+
+/* Карточка видео */
 .content__video-card {
   display: grid;
-  grid-template-columns: 194px 200px;
+  grid-template-columns: 194px 194px;
   align-content: end;
   /* flex-direction: row; */
 }
+
+/* Описание карточки */
 .content__video-card-description-container {
   /* display: flex; */
   height: 100%;
   width: 100%;
+  padding-left: 3px;
 }
+
+/* Заголовок карточки */
 .content__video-card-title {
   font-family: Oswald;
   font-weight: 700px;
   font-size: 30px;
   line-height: 30px;
 }
+
+/* Описание карточки (слева от фото) */
 .content__video-card-description {
   font-family: 'Fira Sans Condensed';
   font-weight: 400px;
   font-size: 18px;
-  line-height: 16.2px;
+  /* line-height: 16.2px; */
 }
+
+/* Фото карточки */
 .content__video-card-thumbnail {
   max-height: 103px;
   max-width: 194px;
   flex-grow: 1;
   object-fit: cover;
+  object-position: center;
 
 }
+
+/* Контейнер для кнопки "Показать еще" */
 .more-button-template {
+width: 100%;
+
 }
+
+/* Кнопка "Показать еще" */
 .more-button {
+  width: 100%;
+  background-color: transparent;
+  color: white;
 }
 .error-template {
 }
