@@ -185,18 +185,19 @@ word-wrap: break-word;
 }
 
 .content__accent {
-  position: relative;
-  z-index: -1;  
+  color: #545050;
+  /* position: relative;
+  z-index: -1;   */
 }
 
-
+/* 
 .content__accent::before {
 content: '';
 position: absolute;
 inset: 0;
 background-color:rgba(27, 25, 25, 0.5);
 z-index: 0;
-}
+} */
 
 
 .content__list {
