@@ -186,6 +186,13 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   background-color: #fff;
 }
 
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
 .search-form__label:has(:focus-visible):not(:active) {
   outline: 1px solid #fff;
   outline-offset: 4px;
