@@ -217,15 +217,14 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 /* сама Кнопка */
 .button {
-  align-self: center;
-  width: 194px;
+  /* align-self: center; */
+  /* width: 194px; */
   padding: 5px;
-  outline: 1px solid #fff;
-  color: #fff;
+  border: 1px solid currentColor;
+  color: inherit;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  word-wrap: break-word;
   background-color: transparent;
   cursor: pointer;
 }
