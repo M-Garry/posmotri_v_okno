@@ -81,6 +81,7 @@ ol {
   display: flex;
   justify-content: space-between;
 }
+
 /*Поле ввода + заголовок этого поля */
 .search-form__fieldset {
   display: flex;
@@ -151,7 +152,8 @@ ol {
 }
 
 /* Тут все чекбоксы */
-.search-form__checkbox-list {
+.search-form__checkbox-list
+{
   display: flex;
   justify-content: space-between;
   gap: 15px;
@@ -160,6 +162,7 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  margin-top: 3px;
   cursor: pointer;
 }
 
