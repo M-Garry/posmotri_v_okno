@@ -266,7 +266,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   gap: 20px;
   width: 100%;
   min-width: 400px;
-  min-height: 540px; 
+  /* min-height: 540px;  */
   height: 100%;
 }
 
@@ -290,7 +290,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .content__list {
   position: relative;
   max-width: 398px;
-  max-height: 298px;
+  height: 298px;
   overflow: auto;
 }
 
