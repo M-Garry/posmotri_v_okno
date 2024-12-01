@@ -151,17 +151,16 @@ ol {
 }
 
 /* Тут все чекбоксы */
-.search-form__checkbox-list
-{
+.search-form__checkbox-list {
   display: flex;
   justify-content: space-between;
   gap: 15px;
   width: fit-content;
+  margin-top: 3px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  margin-top: 3px;
   cursor: pointer;
 }
 
@@ -186,7 +185,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -223,10 +222,8 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 /* сама Кнопка */
 .button {
-  /* align-self: center; */
-  /* width: 194px; */
-  padding: 5px;
   border: 1px solid currentColor;
+  padding: 5px;
   color: inherit;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
@@ -249,7 +246,8 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .button:focus {
-  outline: none;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 /* Класс для кнопки */
@@ -266,19 +264,18 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   gap: 20px;
   width: 100%;
   min-width: 400px;
-  /* min-height: 540px;  */
   height: 100%;
 }
 
 /* Большие буквы над карточками */
 .title {
+  margin-top: 10px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
   text-transform: uppercase;
   cursor: default;
-  margin-top: 10px;
 }
 
 /* Первые 2 большие буквы */
@@ -306,7 +303,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 /* Ссылка на карточку */
 .content__card-link {
-  display: block;           
+  display: block;
   margin: 2px;
   color: #fff;
   text-decoration: none;
