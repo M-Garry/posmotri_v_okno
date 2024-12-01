@@ -278,6 +278,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   line-height: 70.5px;
   text-transform: uppercase;
   cursor: default;
+  margin-top: 10px;
 }
 
 /* Первые 2 большие буквы */
